@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#050816" />
+    <title>Reverse Crypto Transaction Tracker</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              bg: "#050816",
+              panel: "#0b1220",
+              panel2: "#10192d",
+              accent: "#38f2b6",
+              accent2: "#58a6ff",
+              danger: "#ff6b8a",
+              gold: "#f6c177"
+            },
+            boxShadow: {
+              glow: "0 0 0 1px rgba(56,242,182,0.12), 0 24px 80px rgba(0,0,0,0.45)"
+            }
+          }
+        }
+      }
+    </script>
+  </head>
+  <body class="bg-bg text-slate-100 antialiased">
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>
